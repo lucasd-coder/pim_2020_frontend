@@ -1,0 +1,15 @@
+﻿
+.container-main {
+    width: 100vw;
+    height: 100vh;
+    font: 700 2.6rem Roboto;
+    background: var(--color-background);
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}

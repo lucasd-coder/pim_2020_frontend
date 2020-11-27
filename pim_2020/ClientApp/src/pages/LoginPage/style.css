@@ -1,0 +1,243 @@
+﻿#login-page {
+    width: 100vw;
+    height: 100vh;
+}
+
+    #login-page main {
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+    }
+
+        #login-page main h1 {
+            font: 600 2.6rem Roboto;
+            padding: 1em;
+        }
+
+    #login-page main form {
+        width: 100%;
+        display: flex;
+        justify-content:center;       
+        text-align: center;
+    }
+
+        #login-page main fieldset legend {
+            font: 700 2.6rem Roboto;
+            color: var(--color-primary-light);            
+            padding: 1em;
+        }
+
+
+                .password-reveal {
+                    cursor: pointer;
+                    position: absolute;
+                    margin: -2.5em;
+                    margin-left: 9em;
+                }
+
+
+
+
+.login-forgot {
+    font-size: 1.5rem;
+    margin: 3em;
+    margin-left: 10em;
+    padding-left: 10em;   
+}
+
+    .login-forgot a {
+        color: var(--color-text-base);
+    }
+
+.login-rod {
+   
+ 
+    position: absolute;
+    margin-top: 8em;
+    margin-left: 3em;
+   
+}
+
+    .login-rod a {
+        color: var(--color-primary-light);
+    }
+
+.login-Remember {
+    display: flex;
+    margin-left: -2em;
+    position: absolute;
+    margin: 3em;
+  
+}
+    
+
+    .login-Remember input[type="checkbox"] {
+        transform: scale(1.5);       
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;       
+        cursor: pointer;
+        font-size: 1rem;
+        visibility: hidden;
+        text-align: center;
+    }
+
+        .login-Remember input[type="checkbox"]:after {
+            content: " ";
+            background: var(--color-input-background);
+            display: inline-block;          
+            color: var(--color-box-base);
+            width: 1.5rem;
+            height: 1.5rem;
+            visibility: visible;
+            border: 1px solid var(--color-line-in-white);
+            border-radius: 0.5rem;
+        }
+
+        .login-Remember input[type="checkbox"]:checked:after {
+            content: "\2714";
+            padding: -1px;
+            font-weight: bold;
+            background: var(--color-secundary);
+            border: 1px solid var(--color-secundary);
+        }
+    .login-Remember label {
+        font-size: 1.2rem;
+        padding-left: 1.5rem;
+    }
+
+
+
+
+#login-page main fieldset .input-unlabeled input {
+   width: 25em;
+}
+
+
+#login-page main fieldset .input-unlabeled input::-ms-reveal {
+    display: none;
+}
+
+#login-page main fieldset .input-unlabeled:focus-within::after {
+    width: calc(80% - 3.2rem);
+    height: 2px;
+    content: "";
+    background: var(--color-primary-light);
+    position: absolute;
+    left: 7rem;
+    right: 3rem;
+    bottom: 0;
+}
+
+
+#login-page main fieldset button {
+    width: 25em;
+    height: 6rem;
+    background-color: var(--color-text-background);
+    border: 0;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    color: var(--color-text-complement);
+    margin: 5rem;
+}
+
+    #login-page main fieldset button:hover {
+        background: var(--color-secundary-dark);
+    }
+
+@media (max-width:414px) and (min-height: 846px) {
+
+    #login-page main fieldset button {
+        margin-left: 1em;
+    }
+
+
+    .login-rod {
+        margin-left: 1em;
+    }
+
+    .login-Remember {
+        margin-left: 1em;
+    }
+    .login-forgot {
+        font-size: 1.2rem;
+        padding: 1em;             
+        padding-left: 12em;
+        margin-right: -2em;
+    }
+}
+
+@media (max-width: 360px) and (min-height: 740px) {
+    #login-page main fieldset button {
+        margin: -1em;
+    }
+
+
+    .login-rod {
+        margin-left: 1em;
+    }
+
+    .login-Remember {
+        margin-left: 1em;
+    }
+
+    .login-forgot {
+        font-size: 1.2rem;
+        padding: 1em;
+        padding-left: 9em;
+        margin-right: -2em;
+    }
+
+}
+
+@media (max-width: 375px) and (min-height: 812px) {
+    #login-page main fieldset button {
+        margin: -1em;
+    }
+
+
+    .login-rod {
+        margin-left: 1em;
+    }
+
+    .login-Remember {
+        margin-left: 1em;
+    }
+
+    .login-forgot {
+        font-size: 1.2rem;
+        padding: 1em;
+        padding-left: 9em;
+        margin-right: -2em;
+    }
+}
+
+
+@media (max-width: 412px) and (min-height: 732px) {
+    #login-page main fieldset button {
+        margin: -0.2em;
+    }
+
+
+    .login-rod {
+        margin-left: 1em;
+    }
+
+    .login-Remember {
+        margin-left: 1em;
+    }
+
+    .login-forgot {
+        font-size: 1.2rem;
+        padding: 1em;
+        padding-left: 9em;
+        margin-right: -2em;
+    }
+}

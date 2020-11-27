@@ -1,0 +1,62 @@
+﻿#forgot-main {
+    width:100vw;
+    height:100vh;
+}
+
+    #forgot-main main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10em;
+    }
+
+        #forgot-main main form {
+            width: 22em;
+        }
+
+     #forgot-main .page-image {
+        margin-right: 1.5em;
+    }
+
+
+        #forgot-main main fieldset {
+            border: 0;
+            padding: 0 2.4rem;
+            margin-top: 4em;
+        }
+
+
+            #forgot-main main fieldset legend {
+                font: 700 2.6rem Roboto;
+                color: var(--color-text-title);
+                padding: 1em;
+                margin-left: -1em;
+            }
+
+            #forgot-main main fieldset h1 {
+                font: 700 2.6rem Roboto;
+                color: var(--color-primary-red);
+                padding: 1em;
+                margin-left: -1em;
+            }
+
+            #forgot-main main fieldset button {
+                position: absolute;
+                width: 30rem;
+                height: 5.6rem;
+                background-color: var(--color-text-background);
+                border: 0;
+                border-radius: 0.5em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                transition: background-color 0.2s;
+                cursor: pointer;
+                color: var(--color-text-complement);
+                margin-top: 3rem;
+            }
+
+                #forgot-main main fieldset button:hover {
+                    background: var(--color-secundary-dark);
+                }
