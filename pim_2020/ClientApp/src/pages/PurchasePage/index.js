@@ -145,7 +145,7 @@ export default function PurchasePage() {
                             return (
                                 <div key={record.id} className="select-block">
                                     <label htmlFor="produto">Criptomoedas</label>
-                                    {}
+                                   
                                     <select name="id" value={record.id} onChange={(e) => setRecordItemsValue(index, 'id', e.target.value)}>
                                         <option value="DEFAULT" disabled>Selecione uma opção</option>
                                         {recordsResponse.map((option) => {
